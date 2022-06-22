@@ -12,4 +12,11 @@ public class ApiController {
         double b = 2.54;
         return a * b;
     }
+
+    @RequestMapping("/convertYard")
+    public double convertYard(@RequestParam double a) {
+        double b = 1.094;
+        return a / b;
+
+    }
 }
